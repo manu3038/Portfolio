@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var require: any
+const FileSaver = require('file-saver');
 @Component({
   selector: 'app-intro',
   templateUrl: './intro.component.html',
@@ -11,5 +12,7 @@ export class IntroComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  downloadResume(url,name){
+    FileSaver.saveAs(url,name);
+  }
 }

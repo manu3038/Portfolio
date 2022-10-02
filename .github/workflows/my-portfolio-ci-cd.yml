@@ -21,8 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      
+    steps: 
       - uses: actions/setup-node@v1 #this installs node and npm for us
         with:
           node-version: '14.x'

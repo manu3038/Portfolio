@@ -58,6 +58,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: build
+          folder: dist
           repositorty-name: manu3038/portfolio
           target-folder: public

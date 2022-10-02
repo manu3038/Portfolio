@@ -32,7 +32,7 @@ jobs:
       - name: Clean install dependencies
         run: npm install
 
-              - name: Conventional Changelog Action
+      - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:

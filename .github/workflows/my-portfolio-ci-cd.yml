@@ -22,6 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps: 
+
       - uses: actions/setup-node@v1 #this installs node and npm for us
         with:
           node-version: '14.x'
@@ -31,7 +32,7 @@ jobs:
       - name: Clean install dependencies
         run: npm install
 
-      npm run gh-- name: Conventional Changelog Action
+      - name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
@@ -53,7 +54,7 @@ jobs:
         run: |
           npm run build --prod
 
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages

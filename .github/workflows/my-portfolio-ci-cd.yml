@@ -40,4 +40,4 @@ jobs:
         run: |
           npm install
           npm run build --prod
-          ng deploy
+          npm run deploy

@@ -53,11 +53,11 @@ jobs:
       - name: Build and deploy
         run: |
           npm run build --prod
-          
+
       - name: Deploy 🚀
-          uses: JamesIves/github-pages-deploy-action@v4
-          with:
-            branch: gh-pages
-            folder: build
-            repositorty-name: JamesIves/lab
-            target-folder: public
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: build
+          repositorty-name: JamesIves/lab
+          target-folder: public

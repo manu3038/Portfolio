@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "deploy": "ng build --prod --base-href=/portfolio/",
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.4",

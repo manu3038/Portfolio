@@ -32,7 +32,7 @@ jobs:
       - name: Clean install dependencies
         run: npm install
 
-      - name: Conventional Changelog Action
+      npm run gh-- name: Conventional Changelog Action
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
@@ -53,6 +53,11 @@ jobs:
       - name: Build and deploy
         run: |
           npm run build --prod
-          git config user.name "manu3038"
-          git config user.email "manohar.ng30@gmail.com"
-          npm run deploy
+          
+      - name: Deploy 🚀
+          uses: JamesIves/github-pages-deploy-action@v4
+          with:
+            branch: gh-pages
+            folder: build
+            repositorty-name: JamesIves/lab
+            target-folder: public
